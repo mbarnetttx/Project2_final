@@ -1,0 +1,27 @@
+{
+  "development": {
+    "username": "root",
+<<<<<<< HEAD
+    "password": "password1",
+
+=======
+    "password": "password",
+>>>>>>> fa39b52ab671eb5604460b667002b0ff7a85d173
+    "database": "indoorlearning_db",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "password",
+    "database": "testdb",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
+}
+

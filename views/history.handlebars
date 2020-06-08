@@ -1,0 +1,84 @@
+<div class="container">
+
+<div class="card card-body text-white"><!-- photo-->
+  <img src="https://c4.wallpaperflare.com/wallpaper/662/963/756/artwork-night-stars-sailing-ship-wallpaper-preview.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title factTitle">HISTORY FACT!</h5>
+    <p class="card-text fact">Plays in Shakespeare’s time were different to the ones we have today. There were no female actors 
+      (women’s parts were played by men!), and audiences could be very rowdy. </p>
+  </div>
+</div><!-- end of photo-->
+<br><br>  
+
+<div class="row"><!-- card for database info -->
+  {{#each history}}
+
+    <div class="col-md-4 box">
+      
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{this.title}}</h5>
+
+          <a href={{this.link}} target="_blank"class="card-link">Click here to read!</a>
+          <span id="showLikes">
+          <button class="likes" data-likes={{this.likes}} data-id={{this.id}}><i class="fa fa-smile-o"></i></button>
+           {{this.likes}} </span>
+
+        </div>
+
+        </div>
+
+      </div>
+    {{/each}}
+</div><!-- end of card -->
+
+<br>
+<hr>
+
+  <!-- form -->
+    <div class="row">
+      <div class="col-8 offset-2">
+        <h1 class="card-title">Add a link to contribute to our community!</h1>
+        <form class="clearfix mb-4" action="POST">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" class="form-control" aria-describedby="title" placeholder="Enter Title">
+          </div>
+          <div class="form-group">
+            <label for="category">Category</label>
+                <select class="form-control" id="category">
+                  <option>Science</option>
+                  <option>Mathematics</option>
+                  <option>Art</option>
+                  <option>Reading</option>
+                  <option>History</option>
+                  <option>Break Time!</option>
+                </select>
+              </div>
+          
+          <div class="form-group">
+<<<<<<< HEAD
+            <label for="example-description">Link</label>
+            <textarea class="form-control" id="link" aria-describedby="example-description" placeholder="Enter Link!"></textarea>
+=======
+            <label for="link">Link</label>
+            <textarea class="form-control" id="link" aria-describedby="link" placeholder="Enter Link!"></textarea>
+>>>>>>> 11baed67e41fbe6e3155af28c8dc19472d87022c
+          </div>
+          <button id="submit" class="btn btn-warning float-right">Submit</button>
+        </form>
+        <br>
+        <br>
+      </div>
+      </div>
+    </div>
+  
+</div>
+
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/science.js"></script>
+
+
+
